@@ -1,0 +1,84 @@
+package com.TechCarrerApi.Models;
+
+import java.io.Serializable;
+
+
+public class Products implements Serializable {
+	public int getId() {
+		return Id;
+	}
+	public void setId(int id) {
+		Id = id;
+	}
+	public String getName() {
+		return Name;
+	}
+	public void setName(String name) {
+		Name = name;
+	}
+	public String getImages() {
+		return Images;
+	}
+	public void setImages(String images) {
+		Images = images;
+	}
+	public String getExplanation() {
+		return Explanation;
+	}
+	public void setExplanation(String explanation) {
+		Explanation = explanation;
+	}
+	public float getPrice() {
+		return Price;
+	}
+	public void setPrice(float price) {
+		Price = price;
+	}
+	public float getDiscountPrice() {
+		return DiscountPrice;
+	}
+	public void setDiscountPrice(float discountPrice) {
+		DiscountPrice = discountPrice;
+	}
+	public int getStock() {
+		return Stock;
+	}
+	public void setStock(int stock) {
+		Stock = stock;
+	}
+	public boolean isStatus() {
+		return Status;
+	}
+	public void setStatus(boolean status) {
+		Status = status;
+	}
+	public int getCategoriesId() {
+		return CategoriesId;
+	}
+	public void setCategoriesId(int categoriesId) {
+		CategoriesId = categoriesId;
+	}
+	public String getKeyword() {
+		return Keyword;
+	}
+	public void setKeyword(String keyword) {
+		Keyword = keyword;
+	}
+	public String getDescription() {
+		return Description;
+	}
+	public void setDescription(String description) {
+		Description = description;
+	}
+	private int Id;
+	private String Name;
+	private String Images;
+	private String Explanation;
+	private float Price;
+	private float DiscountPrice;
+	private int Stock;
+	private boolean Status;
+	private int CategoriesId;
+	private String Keyword;
+	private String Description;
+}

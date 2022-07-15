@@ -1,0 +1,18 @@
+package com.TechCarrerApi.Models;
+
+import java.io.Serializable;
+
+
+public class Products implements Serializable {
+	private int Id;
+	private String Name;
+	private String Images;
+	private String Explanation;
+	private float Price;
+	private float DiscountPrice;
+	private int Stock;
+	private boolean Status;
+	private int CategoriesId;
+	private String Keyword;
+	private String Description;
+}

@@ -1,0 +1,21 @@
+package com.TechCarrerApi.Models;
+
+public class Users {
+	
+	public String getUserName() {
+		return UserName;
+	}
+	public void setUserName(String userName) {
+		UserName = userName;
+	}
+	public String getPasswords() {
+		return Passwords;
+	}
+	public void setPasswords(String passwords) {
+		Passwords = passwords;
+	}
+	private String UserName;
+	private String Passwords;
+	
+
+}

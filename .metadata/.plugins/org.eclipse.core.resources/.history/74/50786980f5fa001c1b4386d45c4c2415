@@ -1,0 +1,12 @@
+package com.TechCarrerApi.Models;
+
+public class Categories {
+
+	private int Id;
+	private String Name;
+	private int Submenu;
+	private boolean Status;
+	private String Keyword;
+	public String Description; 
+	
+}

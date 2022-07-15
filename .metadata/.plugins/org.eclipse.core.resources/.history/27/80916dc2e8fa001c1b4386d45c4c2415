@@ -1,0 +1,20 @@
+package com.TechCarrerApi.Helpers;
+
+public class HttpGet {
+	
+	public String Reading (String GetUrl) 
+	{
+		String ReturnedData = "";
+		
+		URL url = new URL(GetUrl);
+		
+		
+		
+		
+		
+		
+		return "";
+	}
+	
+
+}

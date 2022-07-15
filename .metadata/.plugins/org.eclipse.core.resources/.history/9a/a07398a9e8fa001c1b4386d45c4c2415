@@ -1,0 +1,5 @@
+package com.TechCarrerApi.Helpers;
+
+public class HttpGet {
+
+}

@@ -1,0 +1,40 @@
+package com.TechCarrerApi.Helpers;
+
+import java.io.BufferedInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
+
+public class HttpGet {
+	
+	public String Reading (String GetUrl) 
+	{
+		String ReturnedData = "";
+		
+		try {
+			URL url = new URL(GetUrl);
+			
+			HttpURLConnection con = (HttpURLConnection)url.openConnection();
+			con.setRequestMethod("GET");
+			
+			InputStream in = new BufferedInputStream(con.getInputStream());
+			
+			
+			
+		} catch (MalformedURLException e) {
+
+		} catch (IOException e) {
+
+		}
+		
+		return ReturnedData;
+	}
+	
+	
+	
+	
+	
+
+}

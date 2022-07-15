@@ -1,0 +1,9 @@
+package com.TechCarrerApi.Models;
+
+public class Users {
+	
+	private String UserName;
+	private String Password
+	
+
+}

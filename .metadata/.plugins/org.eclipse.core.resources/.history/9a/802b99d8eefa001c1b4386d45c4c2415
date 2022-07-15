@@ -1,0 +1,30 @@
+package com.TechCarrerApi.Models;
+
+public class Products {
+	public Products(int id, String name, String images, String explanation, float price, float discountPrice, int stock,
+			boolean status, int categoriesId, String keyword, String description) {
+		super();
+		Id = id;
+		Name = name;
+		Images = images;
+		Explanation = explanation;
+		Price = price;
+		DiscountPrice = discountPrice;
+		Stock = stock;
+		Status = status;
+		CategoriesId = categoriesId;
+		Keyword = keyword;
+		Description = description;
+	}
+	public int Id;
+	public String Name;
+	public String Images;
+	public String Explanation;
+	public float Price;
+	public float DiscountPrice;
+	public int Stock;
+	public boolean Status;
+	public int CategoriesId;
+	public String Keyword;
+	public String Description;
+}

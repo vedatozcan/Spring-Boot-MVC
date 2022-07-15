@@ -1,0 +1,67 @@
+package com.TechCarrerApi.Helpers;
+
+import java.io.BufferedInputStream;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
+
+public class HttpGet {
+	
+	public String Reading (String GetUrl) 
+	{
+		String ReturnedData = "";
+		
+		try {
+			URL url = new URL(GetUrl);
+			
+			HttpURLConnection con = (HttpURLConnection)url.openConnection();
+			con.setRequestMethod("GET");
+			
+			InputStream in = new BufferedInputStream(con.getInputStream());
+			
+			
+			
+		} catch (MalformedURLException e) {
+
+		} catch (IOException e) {
+
+		}
+		
+		return ReturnedData;
+	}
+	
+	
+	public String ConvertToJson(InputStream is) 
+	{
+		
+		String ReadingData = "";
+		
+		BufferedReader reader = new BufferedReader(new InputStreamReader(is));
+		
+		StringBuilder sb = new StringBuilder();
+		
+		
+		try {
+			while((ReadingData = reader.readLine()) != null) 
+			{
+				sb.append(ReadingData).append("\n");				
+			}
+		} catch (IOException e) {
+
+
+		}
+		finally {
+			is.close();
+		}
+		
+		return sb.toString();
+		
+	}
+	
+	
+
+}
